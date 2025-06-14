@@ -1,9 +1,0 @@
-# Etapa 1: Build com Ubuntu e Nginx
-FROM ubuntu:22.04 AS builder
-#removendo lixo
-RUN apt-get update && apt-get install nginx -y && rm -rf /var/lib/apt/lists/*
-
-EXPOSE 80
-#dando sinal de vida
-COPY index.html /usr/share/nginx/html/ 
-CMD ["nginx", "-g", "daemon off;"]
