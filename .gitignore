@@ -1,0 +1,15 @@
+.terraform/
+.terraform.tfstate*
+terraform.tfstate*
+.terraform.lock.hcl
+.terraform.lock.hcl*
+test_*
+*.log
+errored.tfstate*
+*.exe
+*.dsp
+*.rpm
+*.txt
+*.zip
+*.msi
+.vscode/
