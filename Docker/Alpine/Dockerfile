@@ -15,4 +15,7 @@ ARG hello="Linux"
 ENV hello=$hello
 RUN echo "$hello is life S2!"
 
+#destino do mount
+VOLUME /app/dados
+
 CMD [ "/app/hello" ]
