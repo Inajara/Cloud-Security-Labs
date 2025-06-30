@@ -1,30 +1,35 @@
 # Cloud-Security-Labs
 
-Repositório focado em estudos e laboratórios práticos relacionados à segurança em ambientes cloud, híbridos e on premises, com foco em automação, infraestrutura como código e práticas DevSecOps.
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
----
+## Sobre
 
-## Sobre o Projeto
+Este repositório reúne laboratórios, scripts e exemplos práticos focados em segurança para ambientes **cloud**, híbridos e on premises, com ênfase na automação e boas práticas de **DevSecOps**.
 
-Este repositório contém scripts e configurações para:
-
-- Criação e hardening de containers Docker seguros
-- Provisionamento e gerenciamento de infraestrutura via Terraform
-- Experimentação e validação de práticas recomendadas em segurança de ambientes cloud
-- Automação e integração com ferramentas modernas de DevSecOps
-
-O objetivo é servir como base para aprendizado, testes e demonstrações em ambientes controlados.
+O objetivo é criar uma base de referência e estudo para a aplicação de segurança na infraestrutura como código (IaC), containers, orquestração e pipelines de desenvolvimento, usando ferramentas modernas como Docker, Kubernetes, Terraform, Ansible e Pulumi.
 
 ---
 
 ## Tecnologias e Ferramentas
 
-- **Docker**: criação, configuração e segurança de containers
-- **Terraform**: provisionamento de infraestrutura declarativa
-- **(Opcional)** Kubernetes (em breve): orquestração de containers com foco em segurança
-- **(Opcional)** Ansible / Pulumi: automação de configurações e provisionamento
-- **.NET 6/8**: base para desenvolvimento de aplicações seguras (futuro)
+- **Docker**: criação e gerenciamento de containers seguros e otimizados  
+- **Terraform**: provisionamento de infraestrutura declarativa  
+- **Kubernetes** (scripts e exemplos para clusters seguros)  
+- **Ansible**: automação de configurações e hardening de sistemas  
+- **Pulumi**: infraestrutura como código utilizando linguagens de programação modernas  
+- **.NET 5/6/8**: aplicações desenvolvidas com foco em segurança e integração com ambientes cloud  
 
 ---
 
 ## Estrutura do Repositório
+
+```plaintext
+/Cloud-Security-Labs
+│
+├── docker/               # Scripts e Dockerfiles para containers  
+├── terraform/            # Código Terraform para provisionamento  
+├── ansible/              # Playbooks para automação e configuração segura  
+├── pulumi/               # Projetos Pulumi para IaC  
+├── samples/              # Exemplos de aplicações .NET seguras  
+├── docs/                 # Documentação adicional e boas práticas  
+└── README.md             # Este arquivo  
