@@ -1,8 +1,3 @@
-resource "azurerm_resource_group" "rg" {
-  name     = "tf-treinamento"
-  location = "East US 2"
-}
-
 # networking
 resource "azurerm_virtual_network" "vnet" {
   name                = "tf-treinamento-vnet"
