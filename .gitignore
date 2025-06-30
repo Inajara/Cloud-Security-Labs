@@ -13,3 +13,6 @@ errored.tfstate*
 *.zip
 *.msi
 .vscode/
+.vs/
+bin/
+obj/
