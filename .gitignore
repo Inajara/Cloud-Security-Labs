@@ -12,7 +12,9 @@ errored.tfstate*
 *.txt
 *.zip
 *.msi
+.github/
 .vscode/
 .vs/
+.idea/
 bin/
 obj/
