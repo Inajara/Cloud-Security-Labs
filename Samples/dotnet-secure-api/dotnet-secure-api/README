@@ -1,0 +1,78 @@
+# 🔐 API .NET 8 com Autenticação JWT (Bearer)
+
+Esta API foi construída como parte dos labs do repositório **Cloud Security Labs**, com foco em autenticação segura usando **JWT (Bearer Token)** em aplicações ASP.NET Core 8.0.
+
+## ⚙️ Tecnologias utilizadas
+
+- [.NET 8](https://learn.microsoft.com/en-us/dotnet/core/whats-new/dotnet-8)
+- ASP.NET Core Web API
+- Autenticação JWT com `Microsoft.AspNetCore.Authentication.JwtBearer`
+- Swagger (Swashbuckle) com suporte a Bearer token
+
+---
+
+## 🚀 Como executar localmente
+
+### Pré-requisitos:
+
+- [.NET 8 SDK](https://dotnet.microsoft.com/download/dotnet/8.0)
+- Editor como Visual Studio, VS Code ou Rider
+- (Opcional) [Postman](https://www.postman.com/) ou cURL para testar os endpoints
+
+### Passos:
+
+1. Clone o repositório:
+```bash
+git clone https://github.com/Inajara/Cloud-Security-Labs.git
+cd Cloud-Security-Labs/Samples/SuaApiComJWT/
+```
+2. Restaure os pacotes:
+```bash
+dotnet restore
+```
+3. Execute a API:
+```bash
+dotnet run
+```
+4. Acesse o Swagger UI:
+```bash
+https://localhost:5001/swagger
+```
+🔑 Autenticação JWT
+
+    A API exige um Bearer Token válido para acessar os endpoints protegidos.
+
+    O Swagger já está configurado para permitir testes com JWT.
+
+Exemplo de uso:
+
+    Faça login (caso haja endpoint /login) e receba um token.
+
+    No Swagger, clique em "Authorize" e cole o token:
+
+Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6...
+
+    Os endpoints marcados com 🔒 poderão ser usados após isso.
+
+🧪 Endpoints principais
+Método	Rota	Protegido	Descrição
+POST	/login	❌	Retorna token JWT válido
+GET	/secure-data	✅	Endpoint protegido
+GET	/public-info	❌	Endpoint público
+
+    Detalhes completos disponíveis no Swagger.
+
+📌 Notas de Segurança
+
+    O token tem tempo de expiração configurado (expiração curta por padrão).
+
+    A chave secreta está definida no appsettings.json, mas deve ser protegida (ex: Azure Key Vault ou secrets locais) em produção.
+
+    Futura melhoria: refresh tokens e roles por claims.
+
+📄 Licença
+MIT. Livre para estudos e reutilização com crédito.
+
+🙋‍♂️ Autor
+Ina Lemos (Inajara)
+Especialista em segurança de ambientes híbridos, com foco atual em automações, containers e identidade.

@@ -8,6 +8,11 @@ Este repositório reúne laboratórios, scripts e exemplos práticos focados em 
 
 O objetivo é criar uma base de referência e estudo para a aplicação de segurança na infraestrutura como código (IaC), containers, orquestração e pipelines de desenvolvimento, usando ferramentas modernas como Docker, Kubernetes, Terraform, Ansible e Pulumi.
 
+## Autor(a)
+
+[Ina Lemos (Inajara)](https://github.com/Inajara)  
+Especialista em segurança com experiência em ambientes corporativos híbridos, certificações AWS, Azure e foco atual em CISSP.
+
 ---
 
 ## Tecnologias e Ferramentas
@@ -33,3 +38,5 @@ O objetivo é criar uma base de referência e estudo para a aplicação de segur
 ├── samples/              # Exemplos de aplicações .NET seguras  
 ├── docs/                 # Documentação adicional e boas práticas  
 └── README.md             # Este arquivo  
+
+Cada pasta traz um experimento ou automação focada em segurança, com instruções para replicação.
