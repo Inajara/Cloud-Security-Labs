@@ -24,7 +24,7 @@ Esta API foi construída como parte dos labs do repositório **Cloud Security La
 1. Clone o repositório:
 ```bash
 git clone https://github.com/Inajara/Cloud-Security-Labs.git
-cd Cloud-Security-Labs/Samples/SuaApiComJWT/
+cd Cloud-Security-Labs/Samples/dotnet-secure-api/
 ```
 2. Restaure os pacotes:
 ```bash
@@ -55,10 +55,9 @@ Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6...
     Os endpoints marcados com 🔒 poderão ser usados após isso.
 
 🧪 Endpoints principais
-Método	Rota	Protegido	Descrição
-POST	/login	❌	Retorna token JWT válido
-GET	/secure-data	✅	Endpoint protegido
-GET	/public-info	❌	Endpoint público
+Método	Rota	            Protegido	Descrição
+POST	/login	            ❌	       Retorna token JWT válido
+GET	    /GetWeatherForecast	✅          Endpoint protegido
 
     Detalhes completos disponíveis no Swagger.
 
