@@ -1,12 +1,19 @@
 # Cloud-Security-Labs
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Sobre
 
 Este repositório reúne laboratórios, scripts e exemplos práticos focados em segurança para ambientes **cloud**, híbridos e on premises, com ênfase na automação e boas práticas de **DevSecOps**.
 
 O objetivo é criar uma base de referência e estudo para a aplicação de segurança na infraestrutura como código (IaC), containers, orquestração e pipelines de desenvolvimento, usando ferramentas modernas como Docker, Kubernetes, Terraform, Ansible e Pulumi.
+
+---
+
+## 💡 Por Que Usar Esses Labs?  
+- **Reduzir vulnerabilidades em containers**: Dockerfiles otimizados com `non-root users` e `multi-stage builds`.  
+- **Automatizar compliance em Kubernetes**: Playbooks Ansible para aplicar CIS Benchmarks.  
+- **Integrar segurança no CI/CD**: Exemplos de pipelines com scan de imagens (Trivy, Clair).
 
 ---
 
@@ -37,7 +44,6 @@ O objetivo é criar uma base de referência e estudo para a aplicação de segur
 Cada pasta traz um experimento ou automação focada em segurança, com instruções para replicação.
 ```
 
-## Autor(a)
-
-[Ina Lemos (Inajara)](https://github.com/Inajara)  
-Especialista em segurança com experiência em ambientes corporativos híbridos, certificações AWS, Azure e foco atual em CISSP.
+## 📌 Outros Projetos Meus  
+- [PowerShell Scripts](https://github.com/Inajara/PowerShell): Automação para Windows Server.  
+- [Meu Portfólio](https://github.com/Inajara/Inajara): Habilidades e contato.  
