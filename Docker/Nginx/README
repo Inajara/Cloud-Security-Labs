@@ -1,0 +1,10 @@
+# 🛡️ Nginx Secure Container  
+Dockerfile otimizado para segurança, com:  
+- Usuário não-root (`USER www-data`).  
+- Headers seguros (removendo `Server: nginx`).  
+- Política de Content-Security-Policy (CSP).  
+
+## 🚀 Como Usar  
+```bash
+docker build -t secure-nginx .  
+docker run -p 80:80 secure-nginx  
