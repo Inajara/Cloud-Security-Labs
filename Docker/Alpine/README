@@ -1,0 +1,5 @@
+# 🔐 Alpine Linux Hardened  
+Imagem mínima com:  
+- Remoção de pacotes desnecessários (`apk --no-cache`).  
+- Configuração de limites de recursos (`ulimit`).  
+- Usuário não-root padrão.  
