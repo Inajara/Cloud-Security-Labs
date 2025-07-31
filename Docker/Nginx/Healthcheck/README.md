@@ -1,12 +1,14 @@
-### Imagem Docker para Nginx com Node Exporter (Download Remoto)
+# Imagem Docker para Nginx com Node Exporter (Download Remoto)
 Este projeto define um Dockerfile para criar uma imagem Docker que serve uma página web simples usando Nginx e inclui o Node Exporter para coletar métricas do sistema, baixando-o diretamente de um link.
 
 ## O que este Dockerfile faz?
 Este Dockerfile constrói uma imagem Docker com as seguintes funcionalidades:
 
-Base da Imagem: Utiliza ubuntu:22.04 como sistema operacional base para a construção.
+- Base da Imagem: 
+Utiliza ubuntu:22.04 como sistema operacional base para a construção.
 
-Metadados: Define o maintainer (mantenedor) da imagem.
+- Metadados: 
+Define o maintainer (mantenedor) da imagem.
 
 ## Instalação de Pacotes:
 
@@ -26,9 +28,11 @@ Utiliza o comando ADD para baixar e descompactar o arquivo node_exporter-1.6.0.l
 
 Copia o arquivo index.html (presumivelmente a página web a ser servida) para o diretório /var/www/html/, que é o diretório padrão de documentos do Nginx.
 
-Diretório de Trabalho: Define /var/www/html como o diretório de trabalho padrão dentro do contêiner.
+- Diretório de Trabalho: 
+Define /var/www/html como o diretório de trabalho padrão dentro do contêiner.
 
-Variáveis de Ambiente: Define uma variável de ambiente APP_VERSION com o valor 1.0.0, que pode ser usada para versionamento da aplicação.
+- Variáveis de Ambiente: 
+Define uma variável de ambiente APP_VERSION com o valor 1.0.0, que pode ser usada para versionamento da aplicação.
 
 ## Ponto de Entrada (ENTRYPOINT):
 

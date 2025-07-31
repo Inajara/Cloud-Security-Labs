@@ -1,10 +1,11 @@
-### Imagem Docker para Nginx Minimalista
+# Imagem Docker para Nginx Minimalista
 Este projeto define um Dockerfile para criar uma imagem Docker que serve uma página web usando Nginx de forma simples e direta.
 
 ## O que este Dockerfile faz?
 Este Dockerfile constrói uma imagem Docker com o Nginx, pronta para servir conteúdo estático:
 
-Base da Imagem: Utiliza ubuntu:22.04 como sistema operacional base.
+- Base da Imagem: 
+Utiliza ubuntu:22.04 como sistema operacional base.
 
 ## Instalação de Pacotes:
 
