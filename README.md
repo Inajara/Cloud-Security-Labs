@@ -45,5 +45,4 @@ Cada pasta traz um experimento ou automação focada em segurança, com instruç
 ```
 
 ## 📌 Outros Projetos Meus  
-- [PowerShell Scripts](https://github.com/Inajara/PowerShell): Automação para Windows Server.  
 - [Meu Portfólio](https://github.com/Inajara/Inajara): Habilidades e contato.  
