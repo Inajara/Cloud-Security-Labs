@@ -1,4 +1,5 @@
 using System.Text;
+using dotnet_secure_api.Services;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
@@ -6,6 +7,8 @@ using Microsoft.OpenApi.Models;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+var filePath = Path.Combine(builder.Environment.ContentRootPath, "Data", "dados.json");
+builder.Services.AddSingleton(new ContasBancariasFileRepository(filePath));
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
