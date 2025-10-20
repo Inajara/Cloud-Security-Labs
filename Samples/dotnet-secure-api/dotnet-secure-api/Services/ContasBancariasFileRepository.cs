@@ -46,15 +46,8 @@ public class ContasBancariasFileRepository
     
     private void Save()
     {
-        try
-        {
-            var json = JsonSerializer.Serialize(_cache, _jsonOptions);
-            File.WriteAllText(_filePath, json);
-        }
-        finally
-        {
-            _lock.ExitWriteLock();
-        }
+        var json = JsonSerializer.Serialize(_cache, _jsonOptions);
+        File.WriteAllText(_filePath, json);
     }
 
     public IEnumerable<ContaBancaria> GetAll()

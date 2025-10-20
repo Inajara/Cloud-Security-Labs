@@ -8,6 +8,7 @@ namespace dotnet_secure_api.Controllers;
 
 [ApiController]
 [Route("api/[controller]")]
+[Produces("application/json", "application/xml")]
 
 public class ContaBancariaController : ControllerBase
 {
